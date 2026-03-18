@@ -2,7 +2,14 @@ import { useState, useCallback } from 'react';
 import { cards } from '../data/cards';
 
 export function useCardState() {
-  const [unlockedCards, setUnlockedCards] = useState<Set<number>>(new Set());
+  const [unlockedCards, setUnlockedCards] = useState<Set<number>>(() => {
+    try {
+      const stored = localStorage.getItem('unlockedCards');
+      return stored ? new Set<number>(JSON.parse(stored)) : new Set<number>();
+    } catch {
+      return new Set<number>();
+    }
+  });
   const [activeModal, setActiveModal] = useState<number | null>(null);
   const [passwordError, setPasswordError] = useState(false);
 
@@ -15,7 +22,11 @@ export function useCardState() {
   const handlePasswordSubmit = useCallback((cardId: number, password: string) => {
     const card = cards.find(c => c.id === cardId);
     if (card && password.toLowerCase().trim() === card.password.toLowerCase()) {
-      setUnlockedCards(prev => new Set(prev).add(cardId));
+      setUnlockedCards(prev => {
+        const next = new Set(prev).add(cardId);
+        localStorage.setItem('unlockedCards', JSON.stringify([...next]));
+        return next;
+      });
       setActiveModal(null);
       setPasswordError(false);
     } else {
