@@ -1,0 +1,50 @@
+import { cards } from './data/cards';
+import { useCardState } from './hooks/useCardState';
+import { useMediaQuery } from './hooks/useMediaQuery';
+import { Background } from './components/Background/Background';
+import { CardGrid } from './components/CardGrid/CardGrid';
+import { CardSwiper } from './components/CardSwiper/CardSwiper';
+import { PasswordModal } from './components/PasswordModal/PasswordModal';
+import styles from './App.module.css';
+
+function App() {
+  const {
+    unlockedCards,
+    activeModal,
+    passwordError,
+    handleCardClick,
+    handlePasswordSubmit,
+    handleModalClose,
+  } = useCardState();
+
+  const isMobile = useMediaQuery('(max-width: 767px)');
+
+  return (
+    <div className={styles.app}>
+      <Background />
+      <main>
+        {isMobile ? (
+          <CardSwiper
+            cards={cards}
+            unlockedCards={unlockedCards}
+            onCardClick={handleCardClick}
+          />
+        ) : (
+          <CardGrid
+            cards={cards}
+            unlockedCards={unlockedCards}
+            onCardClick={handleCardClick}
+          />
+        )}
+      </main>
+      <PasswordModal
+        cardId={activeModal}
+        error={passwordError}
+        onSubmit={handlePasswordSubmit}
+        onClose={handleModalClose}
+      />
+    </div>
+  );
+}
+
+export default App;

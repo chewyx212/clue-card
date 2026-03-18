@@ -1,0 +1,24 @@
+:root {
+  --color-bg-deep: #080c18;
+  --color-bg-mid: #0f1628;
+  --color-surface: #151d35;
+  --color-silver: #c0c8d8;
+  --color-silver-light: #e0e4ed;
+  --color-pale-blue: #a8c4e0;
+  --color-pale-blue-glow: rgba(168, 196, 224, 0.3);
+  --color-ice: #d4e5f7;
+  --color-accent-blue: #6a9fd8;
+  --color-error: #d4707a;
+  --color-text: #e8ecf4;
+  --color-text-muted: #8892a8;
+
+  --font-display: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+  --font-body: 'Raleway', 'Segoe UI', sans-serif;
+
+  --card-border-radius: 12px;
+  --modal-border-radius: 16px;
+
+  --flip-duration: 0.6s;
+  --transition-fast: 0.2s;
+  --transition-medium: 0.35s;
+}
