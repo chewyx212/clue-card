@@ -16,7 +16,7 @@ export function ClueCard({ card, isUnlocked, onClick }: ClueCardProps) {
       <div className={`${styles.inner} ${isUnlocked ? styles.flipped : ""}`}>
         <div className={styles.front}>
           <img
-            src="/card-back.png"
+            src={card.backImage}
             alt="Card back"
             className={styles.backImage}
             draggable={false}

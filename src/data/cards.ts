@@ -7,6 +7,7 @@ export const cards: CardData[] = [
     contentType: 'text',
     content: 'The first clue lies where the moonlight touches the ancient stone.',
     title: 'I',
+    backImage: '/card-back.png',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const cards: CardData[] = [
     contentType: 'text',
     content: 'Follow the silver thread through the labyrinth of echoes.',
     title: 'Clue II',
+    backImage: '/card-back2.png',
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const cards: CardData[] = [
     contentType: 'text',
     content: 'The keeper of secrets dwells beneath the frozen lake.',
     title: 'Clue III',
+    backImage: '/card-back3.png',
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const cards: CardData[] = [
     contentType: 'text',
     content: 'Three keys forged in starlight open the final gate.',
     title: 'Clue IV',
+    backImage: '/card-back4.png',
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ export const cards: CardData[] = [
     contentType: 'text',
     content: 'Speak the name that was forgotten and the path shall appear.',
     title: 'Clue V',
+    backImage: '/card-back5.png',
   },
   {
     id: 6,
@@ -42,5 +47,6 @@ export const cards: CardData[] = [
     contentType: 'text',
     content: 'The answer lies not in the stars, but in the spaces between them.',
     title: 'Clue VI',
+    backImage: '/card-back6.png',
   },
 ];

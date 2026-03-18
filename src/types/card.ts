@@ -4,4 +4,5 @@ export interface CardData {
   contentType: 'text' | 'image';
   content: string;
   title?: string;
+  backImage: string;
 }
