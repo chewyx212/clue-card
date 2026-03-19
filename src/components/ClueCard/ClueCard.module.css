@@ -103,6 +103,7 @@
   color: var(--color-silver-light);
   line-height: 1.7;
   font-style: italic;
+  white-space: pre-wrap;
 }
 
 .contentImage {

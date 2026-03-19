@@ -1,52 +1,63 @@
-import type { CardData } from '../types/card';
+import type { CardData } from "../types/card";
 
 export const cards: CardData[] = [
   {
     id: 1,
-    password: 'crystal',
-    contentType: 'text',
-    content: 'The first clue lies where the moonlight touches the ancient stone.',
-    title: 'I',
-    backImage: '/card-back.png',
+    password: "1",
+    contentType: "text",
+    content: `A=4, B=5, C=6, D=7, E=8, F=9, 
+    G=10, H=11, I=12, J=13, K=14,
+    L=15, M=16, N=17, O=18, P=19,
+    Q=20, R=21, S=22, T=23, U=24,
+    V=25, W=26, X=27, Y=28, Z=29
+    
+    密码：
+    9-4-6-8
+    23-11-8
+    10-12–4-17-23
+`,
+    title: "I",
+    backImage: "/card-back.png",
   },
   {
     id: 2,
-    password: 'arcane',
-    contentType: 'text',
-    content: 'Follow the silver thread through the labyrinth of echoes.',
-    title: 'Clue II',
-    backImage: '/card-back2.png',
+    password: "2",
+    contentType: "text",
+    content: "明知山有虎，偏向虎山行。",
+    title: "II",
+    backImage: "/card-back2.png",
   },
   {
     id: 3,
-    password: 'rune',
-    contentType: 'text',
-    content: 'The keeper of secrets dwells beneath the frozen lake.',
-    title: 'Clue III',
-    backImage: '/card-back3.png',
+    password: "3",
+    contentType: "text",
+    content: "出埃及记 14章",
+    title: "III",
+    backImage: "/card-back3.png",
   },
   {
     id: 4,
-    password: 'sigil',
-    contentType: 'text',
-    content: 'Three keys forged in starlight open the final gate.',
-    title: 'Clue IV',
-    backImage: '/card-back4.png',
+    password: "4",
+    contentType: "text",
+    content: "士师记 7章",
+    title: "IV",
+    backImage: "/card-back4.png",
   },
   {
     id: 5,
-    password: 'ether',
-    contentType: 'text',
-    content: 'Speak the name that was forgotten and the path shall appear.',
-    title: 'Clue V',
-    backImage: '/card-back5.png',
+    password: "5",
+    contentType: "text",
+    content: "创世记 6–8章",
+    title: "V",
+    backImage: "/card-back5.png",
   },
   {
     id: 6,
-    password: 'vortex',
-    contentType: 'text',
-    content: 'The answer lies not in the stars, but in the spaces between them.',
-    title: 'Clue VI',
-    backImage: '/card-back6.png',
+    password: "6",
+    contentType: "text",
+    content:
+      "我不是肌肉，但我比力气更强大。我不是盾牌，但我能保护你的心。害怕的人需要我，软弱的人靠我站起来。没有我，英雄也只是普通人。我是什么？",
+    title: "VI",
+    backImage: "/card-back6.png",
   },
 ];
