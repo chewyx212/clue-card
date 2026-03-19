@@ -3,7 +3,7 @@ import type { CardData } from "../types/card";
 export const cards: CardData[] = [
   {
     id: 1,
-    password: "5555",
+    password: "50x50x50",
     contentType: "text",
     content: `A=4, B=5, C=6, D=7, E=8, F=9, 
     G=10, H=11, I=12, J=13, K=14,
@@ -21,7 +21,7 @@ export const cards: CardData[] = [
   },
   {
     id: 2,
-    password: "lion123",
+    password: "lion2lion2",
     contentType: "text",
     content: "明知山有虎，偏向虎山行。",
     title: "II",
@@ -29,7 +29,7 @@ export const cards: CardData[] = [
   },
   {
     id: 3,
-    password: "exodus",
+    password: "exodus14",
     contentType: "text",
     content: "出埃及记 14章",
     title: "III",
@@ -37,7 +37,7 @@ export const cards: CardData[] = [
   },
   {
     id: 4,
-    password: "7952",
+    password: "5792",
     contentType: "text",
     content: "士师记 7章",
     title: "IV",
