@@ -39,6 +39,11 @@ export function useCardState() {
     setPasswordError(false);
   }, []);
 
+  const handleReset = useCallback(() => {
+    localStorage.removeItem('unlockedCards');
+    setUnlockedCards(new Set());
+  }, []);
+
   return {
     unlockedCards,
     activeModal,
@@ -46,5 +51,6 @@ export function useCardState() {
     handleCardClick,
     handlePasswordSubmit,
     handleModalClose,
+    handleReset,
   };
 }

@@ -15,6 +15,7 @@ function App() {
     handleCardClick,
     handlePasswordSubmit,
     handleModalClose,
+    handleReset,
   } = useCardState();
 
   const isMobile = useMediaQuery('(max-width: 767px)');
@@ -22,6 +23,9 @@ function App() {
   return (
     <div className={styles.app}>
       <Background />
+      <button className={styles.resetBtn} onClick={handleReset} title="Reset all cards">
+        ↺
+      </button>
       <main>
         {isMobile ? (
           <CardSwiper
