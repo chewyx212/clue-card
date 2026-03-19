@@ -3,7 +3,7 @@ import type { CardData } from "../types/card";
 export const cards: CardData[] = [
   {
     id: 1,
-    password: "1",
+    password: "5555",
     contentType: "text",
     content: `A=4, B=5, C=6, D=7, E=8, F=9, 
     G=10, H=11, I=12, J=13, K=14,
@@ -21,7 +21,7 @@ export const cards: CardData[] = [
   },
   {
     id: 2,
-    password: "2",
+    password: "lion123",
     contentType: "text",
     content: "明知山有虎，偏向虎山行。",
     title: "II",
@@ -29,7 +29,7 @@ export const cards: CardData[] = [
   },
   {
     id: 3,
-    password: "3",
+    password: "exodus",
     contentType: "text",
     content: "出埃及记 14章",
     title: "III",
@@ -37,7 +37,7 @@ export const cards: CardData[] = [
   },
   {
     id: 4,
-    password: "4",
+    password: "7952",
     contentType: "text",
     content: "士师记 7章",
     title: "IV",
@@ -45,7 +45,7 @@ export const cards: CardData[] = [
   },
   {
     id: 5,
-    password: "5",
+    password: "unlimited1234",
     contentType: "text",
     content: "创世记 6–8章",
     title: "V",
@@ -53,7 +53,7 @@ export const cards: CardData[] = [
   },
   {
     id: 6,
-    password: "6",
+    password: "6x6x6x6",
     contentType: "text",
     content:
       "我不是肌肉，但我比力气更强大。我不是盾牌，但我能保护你的心。害怕的人需要我，软弱的人靠我站起来。没有我，英雄也只是普通人。我是什么？",
