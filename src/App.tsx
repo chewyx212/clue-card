@@ -4,17 +4,12 @@ import { useMediaQuery } from './hooks/useMediaQuery';
 import { Background } from './components/Background/Background';
 import { CardGrid } from './components/CardGrid/CardGrid';
 import { CardSwiper } from './components/CardSwiper/CardSwiper';
-import { PasswordModal } from './components/PasswordModal/PasswordModal';
 import styles from './App.module.css';
 
 function App() {
   const {
     unlockedCards,
-    activeModal,
-    passwordError,
     handleCardClick,
-    handlePasswordSubmit,
-    handleModalClose,
     handleReset,
   } = useCardState();
 
@@ -41,12 +36,6 @@ function App() {
           />
         )}
       </main>
-      <PasswordModal
-        cardId={activeModal}
-        error={passwordError}
-        onSubmit={handlePasswordSubmit}
-        onClose={handleModalClose}
-      />
     </div>
   );
 }
